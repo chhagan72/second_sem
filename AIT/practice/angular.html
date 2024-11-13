@@ -1,0 +1,67 @@
+<!-- <!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+</head>
+<body ng-controller="myController">
+    <p>{{massage}}</p>
+
+    <script>
+        var app = angular.module('myApp',[]);
+        app.controller('myController',function($scope){
+            $scope.massage = "Helo Chhagan Rathode";
+        });
+    </script>
+</body>
+</html> -->
+
+<!-- Routing -->
+<!DOCTYPE html>
+<html ng-app="routingApp">
+
+<head>
+  <title>Routing with Directives Example</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+</head>
+
+<body>
+
+  <div ng-controller="MainController">
+    <ul>
+      <li><a href="#/">Home</a></li>
+      <li><a href="#/about">About</a></li>
+      <li><a href="#/contact">Contact</a></li>
+    </ul>
+    <div ng-view></div>
+  </div>
+
+  <script>
+    var app = angular.module('routingApp', []);
+
+    app.config(function($routeProvider) {
+      $routeProvider
+        .when('/', {
+          template: '<h1>Home</h1><p>Welcome to the home page!</p>'
+        })
+        .when('/about', {
+          template: '<h1>About</h1><p>Learn about us here!</p>'
+        })
+        .when('/contact', {
+          template: '<h1>Contact</h1><p>Contact us here!</p>'
+        })
+        .otherwise({
+          redirectTo: '/'
+        });
+    });
+
+    app.controller('MainController', function($scope) {
+      // Main controller logic here
+    });
+  </script>
+
+</body>
+
+</html>

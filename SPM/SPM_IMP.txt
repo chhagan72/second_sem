@@ -1,0 +1,91 @@
+Chap 1 - 7.5
+-Risk
+-Potential Risk
+-RMMM --> Mitigation,Monitoring,Management
+-4 aspects P's --> People,Project,Process,Product
+-PMLC
+
+Chap 2 - 9
+case study 
+and sums
+
+Chap 3 -
+-Agile methedology
+-Agile lifecycle --> Inititaion,Planning,Development,Release,Retirement
+-Agile Manifesto values --> 
+4 values --> 
+1.Individual,Interaction,Over process and tools 
+2. working software over comprehensive documnentation
+3.Customer,collaboration over contract negotiation
+4.Responding to change over following a plan 
+and 
+12 principles
+-Scrum Framework
+-Epic,story and task
+-DOR and DOD difference
+-Sprint velocity
+
+Case study
+chap 4
+Risk
+-Type of risk
+-Nature of risk
+-Proactive or Reactive risk
+-
+
+chap 5
+DSDM-Dynamic System Development Method
+-small type of project
+-rad
+-provide some discipline to rad model
+
+Agile
+-Team leader --> Scrum Master
+-Team members --> Development team
+
+Traditional and DSDM
+
+must have
+should have
+could have
+would have
+
+
+RICE fullform
+Reach 
+Impact 
+Confidence
+Effort
+
+Chap 6
+-Retropspective 
+--> Ice breaker
+1.->Casual Environment
+2.->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

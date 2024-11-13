@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <title>
+            <head>
+
+            </head>
+        </title>
+    </head>
+    <body bgcolor="skyblue">
+        <h1 align="center">Canvas</h1>
+        <hr noshade="" size="10">
+        <img id="scream" src="https://rukminim2.flixcart.com/image/850/1000/kt4ozgw0/poster/c/i/z/medium-dragon-ball-z-son-goku-portrait-display-matte-finish-original-imag6jdgvk4ytfgh.jpeg?q=90&crop=false" 
+        height="10" width="10">
+</img>
+        <canvas id="myCanvas" height="250" width="250"  style="border:1px solid rgb(77, 191, 39)">
+        
+        </canvas>
+        <button onclick="myCanvas()">Try it</button>
+    <script>
+        var c=document.getElementById("myCanvas");
+        var ctx=c.getContext("2d");
+        ctx.fillStyle="blue";
+        ctx.fillRect(0,0,200,100);
+        ctx.moveTo(0,0);
+        ctx.lineTo(200,100);
+        ctx.stroke();
+        ctx.moveTo(200,0);
+        ctx.lineTo(100,50);
+        ctx.stroke();
+        ctx.fillStyle="red";
+        ctx.fillstroke="blue";
+        ctx.beginPath();
+        
+        ctx.arc(100,50,40,0,2*Math.PI,true); //true = anticlockwise circle display rotation
+        ctx.stroke();
+        ctx.fill();
+        
+        ctx.fillStyle="red";
+        ctx.font="30px Cambria"
+        ctx.strokeText("Hello World",10,50)
+
+
+        
+    function myCanvas(){
+        var c=document.getElementById("myCanvas");
+        var ctx=c.getContext("2d");
+        var img=document.getElementById("scream");
+        ctx.drawImage(img,0,0,250,250);
+    }
+    
+
+    var grd=ctx.createLinearGradient(0,0,200,0);
+    grd.addColorStop(0,"red");
+    grd.addColorStop(1,"yellow");
+
+    ctx.fillStyle=grd;
+    ctx.fillRect(100,50,10,10);
+    </script>
+    </body>
+</html>

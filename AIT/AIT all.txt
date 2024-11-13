@@ -1,0 +1,765 @@
+1.HTML(Hyper Text Markup Language)
+
+HTML5 - latest version of html
+where we can use audio, video , canvas and svg tags 
+new sematic elements are dicussed.
+local storage in offline mode is also there
+
+
+Semantic elements - 
+header, footer, aside, article, table,  p, section
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>HTML5 Example</title>
+</head>
+<body>
+
+<header>
+    <h1>Welcome to My Website</h1>
+    <p>Here's a header with a navigation menu:</p>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section>
+    <h2>About Us</h2>
+    <article>
+        <h3>Our Story</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in nisi ac eros eleifend condimentum. Duis cursus quam nec nibh gravida, at blandit turpis suscipit.</p>
+    </article>
+    <article>
+        <h3>Our Mission</h3>
+        <p>Sed feugiat ligula nec elit feugiat tempus. Curabitur convallis arcu at enim lobortis, sed dapibus est faucibus. Suspendisse potenti.</p>
+    </article>
+</section>
+
+<aside>
+    <h2>Latest News</h2>
+    <p>Here are the latest updates:</p>
+    <ul>
+        <li>News item 1</li>
+        <li>News item 2</li>
+        <li>News item 3</li>
+    </ul>
+</aside>
+
+<footer>
+    <p>&copy; 2024 My Website. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
+
+
+Non-semantic elements - div, hr, br, span
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>HTML5 Example</title>
+</head>
+<body>
+
+<div>
+    This is a division<br>
+    Hello bro
+</div>
+<hr>
+<span style="color:red">H</span>Ello
+
+</body>
+</html>
+
+
+SVG-Scalable vector graphics for rect, circle and line
+cx, cy, r fill
+x, y, height, width fill
+
+Canvas - to draw rect, square and circle
+canvas id
+var canvas
+var ctx 
+
+
+HTML all.html
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <hr>
+        <h3>Table</h3>
+        <table border="5px">
+            <tr>
+                <th>Sr No</th>
+                <th>Name</th>
+                <th>Age</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Ram</td>
+                <td>25</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Rishi</td>
+                <td>21</td>
+            </tr>
+        </table>
+        <hr>
+        <h3>Audio & video </h3>
+        <audio controls>
+            <source src="" type="audio/mpeg">
+        </audio>
+        <video controls height="100px" width="1000px">
+            <source src="" type="video/mp4">
+        </video>
+        <hr>
+        <h3>SVG</h3>
+        <svg height="200" width="100">
+            <line x1="100" x2="100" 
+            y1="100" y2="100" stroke="green"
+            stroke-width="2">
+            </line>
+            <rect x="10" y="20" height="100"
+            width="100" fill="red">
+            </rect>
+            <circle cx="150" cy="150" r="50"
+            fill="red">
+            </circle>
+             
+        </svg>
+        <hr>
+        <h3>Canvas</h3>
+        <canvas id="myCanvas" height="500" width="500"></canvas>
+        <script>
+            
+            var canvas=document.getElementById('myCanvas');
+            var ctx=canvas.getContext('2d');
+
+            //rect
+            ctx.fillStyle='blue';
+            ctx.fillRect(50,50,100,80);
+
+            //cirlce
+            ctx.beginPath();
+            ctx.arc(250,150,50,0,2*Math.PI);
+            ctx.fillStyle='green';
+            ctx.fill();
+
+
+            //square
+            ctx.fillStyle='blue';
+            ctx.fillRect(150,250,100,100);
+        </script>
+    </body>
+</html>
+
+2.CSS(Cascading Style Sheets)
+
+Architecture includes
+1.File organizations
+2.Selectors
+3.Naming convention
+4.Component based 
+5.Design responsive
+
+CSS frameworks-that are already pre-defined by someone for our use that are
+bootstrap, tailwind css, foundation, bulma, uikit
+
+Selectors
+1.Element selector - target all elements
+2.class selector - we define a specific class attribute (.my-class)
+3.id selector - we define with unique id attribute (#my-id)
+4.Attribute selector - targets elements based on presence 'type'="text"
+5.child selector - targets elements that are direct children of a parent element such as ul>li
+
+Psuedo-classes
+1. :hover - hover effect
+2. :active - apply style to element that is active
+3. :visited - apply style to element that are visited by user
+4. :first-child - target first child of its parent
+5. :last-child - target last child of its parent
+6. :
+ - target elements that have no children or text content
+
+Types of css
+1.inline css - apply style directly to html element
+<p style="color: blue; font-size: 16px;">This is a paragraph with inline styles.</p>
+
+2.internal css - define with <style> tag in <head> tag apply to specific element
+<head>
+    <style>
+        p {
+            color: blue;
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+3.external css - it define styles in sperate css file and link it with <link> tag
+style.css - file is created
+/* styles.css */
+p {
+    color: blue;
+    font-size: 16px;
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>External CSS Example</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<p>This is a paragraph with external CSS.</p>
+
+</body>
+</html>
+
+3.NODEjs
+Node or formally know as nodejs is an open-source platform for runtime environment that allows developers to create all kind of server-side tools and applications in js
+
+Nodejs consists of npm
+It is a node package manager that is used for managing packages and dependencies 
+'node_modules' directory and package.json file
+
+REPl
+Read Evaluate Print Loop
+It is a programming environment that allows you to enter and execute commands
+It reads input from user, evaluate it, print the result and the loops back and read the next input
+
+Nodejs comes with built in REPl
+To launch it just open command prompt and type node
+
+>>node 
+
+and in this prompt user can enter JavaScript code 
+
+>>const msg="Hello World";
+
+>>msg
+"Hello World"
+
+Nodejs Modules - 
+In Node.js, modules are reusable blocks of code that encapsulate related functionality and can be easily imported and used in other modules or scripts.
+
+1.Core Modules:
+Node.js provides several built-in modules that you can use without installing additional packages.
+
+const http=require('http');
+
+const fs = require('fs');
+
+2.Local Modules:
+Local modules are created locally in nodejs application
+
+for ex
+calc.js
+source code - 
+_ _ _ _ 
+export 
+
+index.js
+const calculator=require('./calc');
+
+3.Third-party modules:
+This modules are available online from where we can install it using npm command
+This modules can be installed locally or globally 
+
+locally - project folder
+>>npm install express
+
+globally - system or global
+>>npm install -g nodemon
+
+Server creation in nodejs
+// Import the 'http' module
+const http = require('http');
+
+// Define the port number
+const port = 3000;
+
+// Create the HTTP server
+const server = http.createServer((req, res) => {
+    res.writeHead(200, { 'Content-Type': 'text/plain' });
+
+    res.end('Hello, World!\n');
+});
+
+// Start listening for incoming requests on the specified port
+server.listen(port, () => {
+    console.log('Server is running');
+});
+
+to see the server responses go to http://localhost:3000/ in your web browser
+
+Events
+Every action on a machine is an event
+
+Nodejs has built-in event modules where we can create-, fire-, and listen for your own events
+
+EventEmmitter is a part of events
+1.Import the EventEmitter class:
+const EventEmitter = require('events');
+
+2.Create an instance of EventEmitter:
+const emitter = new EventEmitter();
+
+3.Register Event Listeners:
+emitter.on('event-name', () => {
+    // Event handler logic
+});
+
+4.Emit Events:
+emitter.emit('event-name');
+
+
+4.Angularjs
+Angular is a popular open-source web application framework maintained by Google and a community of developers. It is used for building dynamic, single-page web applications (SPAs) and cross-platform mobile applications.
+
+TypeScript
+TypeScript is an open-source programming language developed by Microsoft. It is a statically typed superset of JavaScript that compiles to plain JavaScript code.
+
+npm install -g typescript
+
+tsc your-file.ts
+
+// Define a function to add two numbers
+function add(a: number, b: number): number {
+    return a + b;
+}
+
+// Define variables
+let num1: number = 5;
+let num2: number = 3;
+
+// Call the function and store the result
+let result: number = add(num1, num2);
+
+// Output the result
+console.log(`The sum of ${num1} and ${num2} is ${result}.`);
+
+
+// Call the function
+console.log(greet(alice));
+
+Modules
+In Angular, modules are a way to organize and bundle related components, directives, pipes, and services into cohesive units. 
+
+Features of Angular Modules:
+1.Encapsulation: 
+2.Dependency Management:
+3.Lazy Loading: 
+4.Feature Segregation:
+
+import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
+import { MyComponent } from './my-component.component';
+
+@NgModule({
+  declarations: [MyComponent], // Components, directives, and pipes declared in this module
+  imports: [CommonModule, FormsModule], // Modules that this module depends on
+  exports: [MyComponent], // Components, directives, and pipes that are exported from this module
+  providers: [], // Services provided by this module
+})
+export class MyModule { }
+
+Components
+1.Component Class: This is a TypeScript class that defines the behavior and properties of the component. It contains the logic for handling user interactions, managing data, and interacting with services.
+
+2.Component Decorator: The @Component decorator is used to decorate the component class and provide metadata such as the component's selector, template, styles, and more.
+
+3.Template: This is an HTML file that defines the component's view. It contains the markup and directives used to render the user interface.
+
+4.Styles: Components can have associated CSS styles that define the appearance and layout of the component's elements.
+
+>>ng generate component my-component
+
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'app-my-component',
+  templateUrl: './my-component.component.html',
+  styleUrls: ['./my-component.component.css']
+})
+export class MyComponent {
+  message: string = 'Hello, Angular!';
+}
+
+<!-- my-component.component.html -->
+<p>{{ message }}</p>
+
+Routing
+Routing in Angular allows you to navigate between different views or pages in a single-page application (SPA) based on the URL.
+
+Setting Up Routing:
+RouterModule & Route Configuration
+
+import { NgModule } from '@angular/core';
+import { RouterModule, Routes } from '@angular/router';
+import { HomeComponent } from './home.component';
+import { AboutComponent } from './about.component';
+import { ContactComponent } from './contact.component';
+
+const routes: Routes = [
+  { path: '', component: HomeComponent },
+  { path: 'about', component: AboutComponent },
+  { path: 'contact', component: ContactComponent }
+];
+
+@NgModule({
+  imports: [RouterModule.forRoot(routes)],
+  exports: [RouterModule]
+})
+export class AppRoutingModule { }
+
+Router Outlet:
+<!-- app.component.html -->
+<nav>
+  <a routerLink="/">Home</a>
+  <a routerLink="/about">About</a>
+  <a routerLink="/contact">Contact</a>
+</nav>
+
+<router-outlet></router-outlet>
+
+Navigation:
+import { Router } from '@angular/router';
+
+@Component({ ... })
+export class HomeComponent {
+  constructor(private router: Router) { }
+
+  goToAboutPage() {
+    this.router.navigate(['/about']);
+  }
+}
+
+SPA (Single Page Application)
+Key Features of SPAs:
+1.Single Page Load
+2.Smooth User Experience
+3.Dynamic Content Rendering
+4.Client-Side Routing
+5.Rich Interactivity
+
+Data Binding
+Data binding in Angular is a powerful feature that allows you to establish a connection between the components' data and the HTML elements in the template. 
+
+1. Interpolation (One-Way Binding): Interpolation is the process of embedding expressions within double curly braces (`{{ }}`) in the template. Angular evaluates these expressions and renders their values in the HTML.
+
+Example:
+
+<p>Hello, {{ name }}</p>
+
+2. Property Binding (One-Way Binding): Property binding allows you to set an HTML element's property to a value from the component class. You use square brackets (`[ ]`) to bind a property of an HTML element to a property of the component class.
+
+Example:
+
+<img [src]="imageUrl">
+
+
+3. Event Binding (One-Way Binding): Event binding allows you to listen for events emitted by HTML elements and execute methods in the component class in response. You use parentheses (`( )`) to bind an event to a method in the component class.
+
+Example:
+
+<button (click)="onClick()">Click me</button>
+
+
+4. Two-Way Binding: Two-way binding allows you to synchronize data between the component class and an input element in the template. It combines property binding and event binding using the `ngModel` directive.
+
+Example:
+
+<input [(ngModel)]="username">
+
+5.PHP(Hypertext Preprocessor)
+
+Data Types in PHP:
+Integer
+Float
+String
+Boolean
+Array
+Object
+Resource
+
+Variables:
+In PHP, variables are used to store data values. Variable names start with the dollar sign $, followed by the variable name.
+
+$name = "John";
+$age = 30;
+$height = 6.2;
+$isMarried = true;
+
+Constants:
+Constants are similar to variables, but their values cannot be changed once they are defined. 
+
+define("PI", 3.14);
+const SITE_NAME = "My Website";
+
+Operators:
+PHP supports various operators for performing operations on variables and values:
+
+Arithmetic Operators: +, -, *, /, %.
+Assignment Operators: =, +=, -=, *=, /=.
+Comparison Operators: ==, !=, >, <, >=, <=.
+Logical Operators: &&, ||, !.
+String Operators: . (concatenation).
+Increment/Decrement Operators: ++, --.
+Ternary Operator: ? :
+
+Working with Arrays:
+Arrays in PHP are ordered maps that hold key-value pairs. You can create arrays using the array() function or using square brackets []
+
+//1. Indexed Array
+$colors = array("Red", "Green", "Blue");
+
+//2. Associative Array
+$person = array("name" => "John", "age" => 30, "city" => "New York");
+
+// Accessing Array Elements
+echo $colors[0]; // Output: Red
+echo $person["name"]; // Output: John
+
+// Adding Elements to an Array
+$colors[] = "Yellow";
+
+//3. Multidimensional-array
+// Indexed Multidimensional Array
+$matrix = array(
+    array(1, 2, 3),
+    array(4, 5, 6),
+    array(7, 8, 9)
+);
+
+// Associative Multidimensional Array
+$students = array(
+    array("name" => "John", "age" => 25),
+    array("name" => "Alice", "age" => 30),
+    array("name" => "Bob", "age" => 28)
+);
+
+Accessing:
+// Accessing an Element in an Indexed Multidimensional Array
+echo $matrix[0][1]; // Output: 2
+
+// Accessing an Element in an Associative Multidimensional Array
+echo $students[1]["name"]; // Output: Alice
+
+Adding Elements:
+// Adding Elements to an Indexed Multidimensional Array
+$matrix[] = array(10, 11, 12);
+
+// Adding Elements to an Associative Multidimensional Array
+$students[] = array("name" => "Eva", "age" => 26);
+
+CRUD operation:
+1.config.php
+<?php
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "student1";
+$conn = new mysqli($servername, $username, $password, $dbname);
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+?>
+
+2.create.php
+<!DOCTYPE html>
+<html>
+<title>Student Database</title>
+<body>
+<h2>Student Form</h2>
+<form action="" method="POST">
+  <fieldset>
+    <legend>Student information:</legend>
+    Name:<br>
+    <input type="text" name="name"> <br>
+    Age:<br>
+    <input type="text" name="age"> <br>
+    Email:<br>
+    <input type="email" name="email"><br>
+    <br><br>
+    <input type="submit" name="submit" value="submit">
+  </fieldset>
+</form>
+</body>
+</html>
+
+<?php
+include "config.php";
+  if (isset($_POST['submit'])) {
+    $name = $_POST['name'];
+    $age = $_POST['age'];
+    $email = $_POST['email'];
+    $sql = "INSERT INTO `student1`(`name`, `age`, `email`) VALUES ('$name','$age','$email')";
+    $result = $conn->query($sql);
+    if ($result == TRUE) {
+      echo "New record created successfully.";
+      header('Location: view.php');
+    }else{
+      echo "Error:". $sql . "<br>". $conn->error;
+    }
+    $conn->close();
+  }
+?>
+
+3.read.php
+<?php
+include "config.php";
+
+
+                $sql = "SELECT * FROM student1";
+                $result = $conn->query($sql);
+                if ($result->num_rows > 0) {
+                while ($row = $result->fetch_assoc()) {
+        ?>
+                    <tr>
+                    <td><?php echo $row['id']; ?></td>
+                    <td><?php echo $row['name']; ?></td>
+                    <td><?php echo $row['age']; ?></td>
+                    <td><?php echo $row['email']; ?></td>
+                    <td><a class="btn btn-info" href="update.php?id=<?php echo $row['id']; ?>">Edit</a>
+                     &nbsp;
+                     <a class="btn btn-danger" href="delete.php?id=<?php echo $row['id']; ?>">Delete</a>
+                    </td>
+                    </tr>
+            }
+      }
+?>
+
+4.update.php
+<?php
+include "config.php";
+    if (isset($_POST['update'])) {
+        $stu_id = $_POST['stu_id'];
+        $name = $_POST['name'];
+        $age = $_POST['age'];
+        $email = $_POST['email'];
+        $sql = "UPDATE `student1` SET `name`='$name',`age`='$age',`email`='$email' WHERE `id`='$stu_id'";
+        $result = $conn->query($sql);
+        if ($result == TRUE) {
+            echo "Record updated successfully.";
+            header('Location: view.php');
+        }else{
+            echo "Error:" . $sql . "<br>" . $conn->error;
+        }
+
+    }
+
+if (isset($_GET['id'])) {
+    $stu_id = $_GET['id'];
+    $sql = "SELECT * FROM student1 WHERE id='$stu_id'";
+    $result = $conn->query($sql);
+    if ($result->num_rows > 0) {
+        while ($row = $result->fetch_assoc()) {
+            $id = $row['id'];
+            $name = $row['name'];
+            $age = $row['age'];
+            $email = $row['email'];
+        }
+    ?>
+
+        <h2>Student details Update Form</h2>
+        <form action="" method="post">
+          <fieldset>
+            <legend>Personal information:</legend>
+            Name:<br>
+            <input type="text" name="name" value="<?php echo $name; ?>">
+            <input type="hidden" name="stu_id" value="<?php echo $id; ?>">
+            <br>
+            Age:<br>
+            <input type="text" name="age" value="<?php echo $age; ?>">
+            <br>
+            Email:<br>
+            <input type="email" name="email" value="<?php echo $email; ?>">
+            <br><br>
+            <input type="submit" value="Update" name="update">
+          </fieldset>
+        </form>
+        </body>
+        </html>
+
+
+    <?php
+    } else{
+        header('Location: view.php');
+    }
+}
+?>
+
+5.delete.php
+<?php
+include "config.php";
+if (isset($_GET['id'])) {
+    $stu_id = $_GET['id'];
+    $sql = "DELETE FROM student1 WHERE id ='$stu_id'";
+     $result = $conn->query($sql);
+     if ($result == TRUE) {
+        echo "Record deleted successfully.";
+        header('Location: view.php');
+    }else{
+        echo "Error:" . $sql . "<br>" . $conn->error;
+    }
+}
+?>
+
+Cookies:
+Cookies in PHP are small pieces of data that are stored on the client's computer. They are often used to remember information about the user, such as preferences or login credentials.
+
+<?php
+$name = "MCA";
+$value = "Cookie Value";
+$expire = time() + (15 * 60); 
+$expire = $expire + (2 * 24 * 60 * 60); 
+setcookie($name, $value, $expire);
+
+if (count($_COOKIE) > 0) {
+    echo "Cookie '" . $name . "' is set!<br>";
+    echo "Expiration time: " . date("F j, Y, g:i a", $expire) . "<br>";
+} else {
+    echo "Cookie cannot be set!<br>";
+}
+?>
+
+Session:
+sessions provide a way to persist data across multiple requests from the same client. Sessions are often used to store user-specific information, such as login credentials, shopping cart contents, or user preferences
+
+<?php
+// Start the session
+session_start();
+
+// Set session data
+$_SESSION['username'] = 'John Doe';
+
+// Set session expiration time to 1 hour from now
+$session_expiration_time = time() + 3600; // 1 hour from now
+$_SESSION['expire_time'] = $session_expiration_time;
+
+echo "Session is set.";
+
+// To delete a session after 1 hour, you can check if the session has expired
+if (isset($_SESSION['expire_time']) && time() > $_SESSION['expire_time']) {
+    // Unset all session variables
+    session_unset();
+    
+    // Destroy the session
+    session_destroy();
+    
+    echo "<br>Session is deleted.";
+}
+?>
+
+

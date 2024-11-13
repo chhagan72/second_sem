@@ -1,0 +1,37 @@
+Q3. Explain any four pseudo classes in CSS with suitable example
+ANS: 
+
+Pseudo-classes in CSS are used to define the special state of an element. Here are four commonly used pseudo-classes along with examples:
+
+1. :hover:- This pseudo-class is used to apply styles when the user hovers over an element with their cursor.
+example
+a:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+In this example, when the user hovers over a link (<a> element), the color of the text changes to red and the text gets underlined.
+
+2. :active:- This pseudo-class applies styles to an element while it is being activated by the user. For example, when a user clicks on a link.
+Example:
+a:active {
+    color: blue;
+}
+
+In this example, when the user clicks on a link (<a> element), the color of the text changes to blue.
+
+3. :nth-child():- This pseudo-class allows you to select elements based on their position within a parent element. You can specify a formula to target elements by their position.
+Example:
+li:nth-child(even) {
+    background-color: lightgray;
+}
+
+In this example, every even-numbered <li> element within its parent will have a light gray background color.
+
+4. :first-child:- This pseudo-class selects the first child element of its parent.
+Example:
+ul li:first-child {
+    font-weight: bold;
+}
+
+In this example, the first <li> element within each <ul> will have bold font weight.

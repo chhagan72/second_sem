@@ -1,0 +1,34 @@
+Q6. What is NodeJS? Explain its working and features.
+Ans:
+
+Node.js is an open-source, cross-platform JavaScript runtime environment that allows developers to run JavaScript code outside of a web browser. It's built on the V8 JavaScript engine, which is the same engine that powers Google Chrome. Node.js enables developers to build scalable and high-performance applications, particularly server-side applications.
+
+Here's a breakdown of its working and features:
+1. Event-driven architecture:-
+2. Asynchronous programming:- 
+3. Single-threaded but highly scalable:- 
+4. Rich ecosystem of libraries (npm):- 
+5. Cross-platform:- 
+6. Streaming data:- 
+7. Support for web development:- 
+
+1. Event-driven architecture:-
+Node.js uses an event-driven, non-blocking I/O model, which means that it can handle multiple concurrent operations efficiently. Instead of waiting for one operation to complete before moving on to the next, Node.js can handle multiple requests simultaneously by executing callbacks once the operations are finished.
+
+2. Asynchronous programming:- 
+Node.js heavily utilizes asynchronous programming, which allows it to handle many concurrent connections without getting bogged down by waiting for I/O operations to complete. This makes it suitable for building real-time applications like chat applications, online gaming platforms, or streaming services.
+
+3. Single-threaded but highly scalable:- 
+Node.js uses a single-threaded event loop to handle requests. While this might seem limiting, it actually allows Node.js to be highly scalable because it can handle many concurrent connections without the overhead of creating new threads for each connection.
+
+4. Rich ecosystem of libraries (npm):- 
+Node.js has a vast ecosystem of libraries and modules available through the Node Package Manager (npm). npm hosts over a million packages of reusable code that developers can easily integrate into their applications, speeding up development and reducing the need to reinvent the wheel.
+
+5. Cross-platform:- 
+Node.js is cross-platform, meaning it can run on various operating systems such as Windows, macOS, and Linux. This allows developers to write code once and deploy it across different environments without significant modifications.
+
+6. Streaming data:- 
+Node.js is well-suited for handling streaming data, such as processing files or network streams. Its non-blocking I/O model enables efficient handling of large files or continuous data streams without consuming excessive memory.
+
+7. Support for web development:- 
+While Node.js is commonly used for server-side applications, it can also be used for client-side development. With frameworks like Express.js, developers can build web servers and RESTful APIs quickly and efficiently.

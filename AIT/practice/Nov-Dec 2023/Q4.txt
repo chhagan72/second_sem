@@ -1,0 +1,21 @@
+Q4. Explain semantic elementsin HTML 
+ANS. 
+Semantic elements in HTML5 are tags that provide meaning to the content they enclose, making it clear to both the browser and the developer what role that content plays on the webpage. These elements help to structure the content of a webpage in a meaningful way, improving accessibility, SEO, and maintainability.
+
+Here are some common semantic elements in HTML5 along with their purposes:
+
+1. <header>: Represents introductory content at the beginning of a section or webpage. Typically contains navigation, branding, or introductory text.
+
+2. <nav>: Defines a section of navigation links, such as menus or tables of contents.
+
+3. <main>: Indicates the main content of the webpage. It should not include navigation links, footers, or headers.
+
+4. <article>: Represents a self-contained piece of content that could be distributed and reused independently, such as a blog post or news article.
+
+5. <section>: Defines a thematic grouping of content, typically with a heading. It's a generic container for grouping related content.
+
+6. <aside>: Represents content tangentially related to the main content, such as sidebars or call-out boxes.
+
+7. <footer>: Contains metadata or footer information for a section or the entire webpage, such as copyright information, contact details, or links to related resources.
+
+8. <figure> and <figcaption>: <figure> is used to encapsulate any content that is referenced from the main content, such as images, videos, or diagrams, while <figcaption> provides a caption or description for the content within <figure>.

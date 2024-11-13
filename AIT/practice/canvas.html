@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        canvas
+        {
+
+            border:1px solid gray;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="can" height="500px" width="700px"></canvas>
+    
+    <script>
+        var canvas = document.getElementById('can');
+        var ctx = canvas.getContext("2d");
+        
+    //     // Rectriangle
+    //     ctx.fillStyle='green';
+    //     ctx.fillRect(10,10,150,100);
+    //     // Line
+    //     ctx.moveTo(10,120);
+    //     ctx.lineTo(300,120);
+    //     ctx.stroke();
+
+    //     // Circle
+    //     ctx.beginPath();
+    //     ctx.arc(100,220,80,0,2*Math.PI);
+    //     ctx.stroke()
+
+    //    // Triangle
+    //    ctx.beginPath();
+    //     ctx.moveTo(10, 480);
+    //     ctx.lineTo(100, 330);
+    //     ctx.lineTo(180, 480);
+    //     ctx.closePath();
+    //     ctx.stroke();
+
+    //     // Text
+    //     ctx.font = "30px Arial";
+    //     ctx.fillText("Hello World", 10, 550);
+
+    // ctx.beginPath();
+    // ctx.arc(90,120,75,1.1*Math.PI,1.9*Math.PI);
+    // ctx.strokeStyle='green';
+    // ctx.lineWidth=10;
+    // ctx.stroke();
+
+    ctx.beginPath();
+    ctx.fillStyle = "#FF0000";
+    ctx.arc(85,105,75,0,2*Math.PI,true);
+    ctx.moveTo(132,120);
+    ctx.arc(85,105,50,0,Math.PI,false);
+    ctx.moveTo(65,70);
+    ctx.arc(65,75,5,0,2*Math.PI,false);
+    ctx.moveTo(105,70);
+    ctx.arc(105,75,5,0,2*Math.PI,false);
+    ctx.strokeStyle = "#000000";
+    
+    ctx.stroke();
+    </script>
+</body>
+</html>

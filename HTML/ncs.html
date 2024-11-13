@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas</title>
+    <style>
+        .canvas{
+            border: 2px solid #000;
+        }
+    </style>
+</head>
+<body>
+    <canvas height="400" width="500" class="canvas" id="canvas"></canvas>
+
+
+    <script>
+        var canvas = document.getElementById("canvas");
+        var ctx = canvas.getContext("2d")
+//create Box in the canvas
+        // ctx.fillStyle="red"
+        // ctx.fillRect(100,100,300,200)
+        // ctx.strokeStyle="black"
+        // ctx.strokeRect(100,100,300,200)
+
+// Create to the line in the canvas
+        // ctx.moveTo(100,100)
+        // ctx.lineTo(100,300)
+        // ctx.lineTo(300,300)
+        // ctx.lineTo(100,100)
+        // ctx.strokeStyle="red"
+        // ctx.stroke()
+
+// Text in canvas
+        // ctx.font="50px times new roman"
+        // ctx.strokeStyle="red"
+        // ctx.strokeText("Chhagan",150,202)
+        // ctx.fillStyle="blue"
+        // ctx.fillText("Chhagan",150,198)
+
+// Linear gradient in canvas
+        // var gradient = ctx.createLinearGradient(100,100,200,0)
+        // gradient.addColorStop(0,"red")
+        // gradient.addColorStop(1,"yellow")
+
+        // ctx.fillStyle=gradient
+        // ctx.fillRect(0,0,200,200)
+        // ctx.strokeStyle=gradient
+        // ctx.strokeRect(100,100,200,200)
+
+        // ctx.font="50px times new roman"
+        // ctx.fillStyle=gradient
+        // ctx.fillText("Chhagan",150,198)
+        
+// Radial gradient in canvas
+        var gradient = ctx.createRadialGradient(50,50,30,50,50,50)
+        gradient.addColorStop(0,"red")
+        gradient.addColorStop(1,"yellow")
+
+        // ctx.fillStyle=gradient
+        // ctx.fillRect(0,0,200,200)
+
+        // ctx.strokeStyle=gradient
+        // ctx.strokeRect(100,100,200,200)
+
+        ctx.font="50px times new roman"
+        ctx.fillStyle=gradient
+        ctx.fillText("Chhagan",10,50)
+        
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>HTML5 Example</title>
+</head>
+<body>
+    <!-- semantic element -->
+<header>
+    <h1>Welcome to My Website</h1>
+    <p>Here's a header with a navigation menu:</p>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section>
+    <h2>About Us</h2>
+    <article>
+        <h3>Our Story</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in nisi ac eros eleifend condimentum. Duis cursus quam nec nibh gravida, at blandit turpis suscipit.</p>
+    </article>
+    <article>
+        <h3>Our Mission</h3>
+        <p>Sed feugiat ligula nec elit feugiat tempus. Curabitur convallis arcu at enim lobortis, sed dapibus est faucibus. Suspendisse potenti.</p>
+    </article>
+</section>
+
+<aside>
+    <h2>Latest News</h2>
+    <p>Here are the latest updates:</p>
+    <ul>
+        <li>News item 1</li>
+        <li>News item 2</li>
+        <li>News item 3</li>
+    </ul>
+</aside>
+
+<footer>
+    <p>&copy; 2024 My Website. All rights reserved.</p>
+</footer>
+
+<hr>
+
+<!-- Non-semantic elements -->
+<div>
+    This is a division<br>
+    Hello bro
+</div>
+<hr>
+<span style="color:red">H</span>Ello
+
+<hr>
+
+<!-- canvas and svg -->
+<h3>Table</h3>
+        <table border="5px">
+            <tr>
+                <th>Sr No</th>
+                <th>Name</th>
+                <th>Age</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Ram</td>
+                <td>25</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Rishi</td>
+                <td>21</td>
+            </tr>
+        </table>
+        <hr>
+        <h3>Audio & video </h3>
+        <audio controls>
+            <source src="" type="audio/mpeg">
+        </audio>
+        <video controls height="100px" width="1000px">
+            <source src="" type="video/mp4">
+        </video>
+        <hr>
+        <h3>SVG</h3>
+        <svg height="200" width="100">
+            <line x1="100" x2="100" 
+            y1="100" y2="100" stroke="green"
+            stroke-width="2">
+            </line>
+            <rect x="10" y="20" height="100"
+            width="100" fill="red">
+            </rect>
+            <circle cx="150" cy="150" r="50"
+            fill="red">
+            </circle>
+             
+        </svg>
+        <hr>
+        <h3>Canvas</h3>
+        <canvas id="myCanvas" height="500" width="500"></canvas>
+        <script>
+            
+            var canvas=document.getElementById('myCanvas');
+            var ctx=canvas.getContext('2d');
+
+            //rect
+            ctx.fillStyle='blue';
+            ctx.fillRect(50,50,100,80);
+
+            //cirlce
+            ctx.beginPath();
+            ctx.arc(250,150,50,0,2*Math.PI);
+            ctx.fillStyle='green';
+            ctx.fill();
+
+
+            //square
+            ctx.fillStyle='blue';
+            ctx.fillRect(150,250,100,100);
+        </script>
+
+
+
+</body>
+</html>

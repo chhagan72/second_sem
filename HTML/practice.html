@@ -1,0 +1,108 @@
+<html>
+    <head>
+        <title>
+            Practice this is oK.
+        </title>
+    </head>
+    <body bgcolor="skyblue">
+        <marquee bgcolor="red" 
+        style="font-weight: bolder;">
+            This is for practice only
+            kindly do studies for good marks
+            and can refer ait ma'am textbooks !!!! 
+        </marquee>
+        <h1 align="center" style="color:blue;">
+            Hello World</h1>
+        <hr color="pink" noshade=10px size=10px>
+        <br>
+        <h3>This is a webpage</h3>
+        <p>This is the practice session on html 
+            for ait exam tomorrow so Please
+            pay attention towards it or you get no
+            marks you got it or not dude be focused 
+            on your carrer ok
+        </p>
+        <h3>List in html</h3>
+        <ol>
+            <lh>Ordered List</lh>
+            <li>Rank AIR1</li>
+            <li>Rank AIR2</li>
+            <li>Rank AIR3</li>
+        </ol>
+        <ul>
+            <lh>Unordered List</lh>
+            <li>apple</li>
+            <li>banna</li>
+            <li>custard apple</li>
+        </ul>
+        <hr noshade size="10px" color="pink">
+        <table align="center" border="5px" 
+        cellspacing="5px" cellpadding="5px">
+            <tr>
+                <th>Sr. No.</th>
+                <th>Names</th>
+                <th>Grade</th>
+                <th>Remarks</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Rishi</td>
+                <td>B+</td>
+                <td>bad student</td>
+
+            </tr>
+            <tr>
+                <td>2</td>
+                <td >PM</td>
+                <td>A++</td>
+                <td>good student but very good</td>
+
+            </tr>
+            <tr>
+                <td >3</td>
+                <td>Raj</td>
+                <td>A+</td>
+                <td >osm student not good</td>
+
+            </tr>
+        </table>
+        <hr color="pink" noshade=10px size=10px>
+        <audio controls>
+            <source src="better.mp3">
+        </audio>
+        <br>
+        <video height="300px" width="300px" controls>
+            <source src="videoe.mp4">
+        </video>
+        <img src="https://shorturl.at/apwxR"  width=100%>
+        </img>
+        <hr noshade size="10px" color="pink">
+        <canvas id="myCanvas" height="250" width="250"  
+        style="border:1px solid rgb(77, 191, 39)">
+            
+        </canvas>
+        <script>
+            var c=document.getElementById("myCanvas");
+            var ctx=c.getContext("2d");
+            ctx.fillStyle="blue";
+            ctx.fillRect(0,0,200,100);
+            ctx.moveTo(0,0);
+            ctx.lineTo(200,100);
+            ctx.stroke();
+            ctx.moveTo(200,0);
+            ctx.lineTo(100,50);
+            ctx.stroke();
+            ctx.fillStyle="red";
+            ctx.fillstroke="blue";
+            ctx.beginPath();
+            
+            ctx.arc(100,50,40,0,2*Math.PI,true); //true = anticlockwise circle display rotation
+            ctx.stroke();
+            ctx.fill();
+            
+            ctx.fillStyle="red";
+            ctx.font="30px Cambria"
+            ctx.strokeText("Hello World",10,50)
+    </script>
+    </body>
+</html>

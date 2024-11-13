@@ -1,0 +1,42 @@
+<!-- Q1. Write a program using Canvas tag to draw different shapes -->
+<!-- (Circle, Triangle and Rectangle). -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        canvas{
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="a" width="500px" height="300"></canvas>
+
+    <script>
+        var canvas = document.getElementById("a");
+        var ctx = canvas.getContext("2d");
+
+        // Circle
+        ctx.beginPath();
+        ctx.arc(100, 75, 50, 0, 2 * Math.PI);
+        ctx.stroke();
+
+        // Triangle
+        ctx.beginPath();
+        ctx.moveTo(200, 100);
+        ctx.lineTo(250, 200);
+        ctx.lineTo(150, 200);
+        ctx.closePath();
+        ctx.stroke();
+
+        // Rectangle
+        ctx.beginPath();
+        ctx.rect(300, 50, 100, 100)
+        ctx.stroke();
+    </script>
+</body>
+</html>

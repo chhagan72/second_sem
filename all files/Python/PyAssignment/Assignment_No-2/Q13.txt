@@ -1,0 +1,53 @@
+datetime.datetime.now():
+
+Use: Returns the current date and time as a datetime object.
+Example:
+python
+Copy code
+from datetime import datetime
+
+current_datetime = datetime.now()
+print(current_datetime)
+datetime.date.today():
+
+Use: Returns the current date as a date object.
+Example:
+python
+Copy code
+from datetime import date
+
+current_date = date.today()
+print(current_date)
+datetime.timedelta(days=n) (timedelta function):
+
+Use: Represents the duration between two dates or times.
+Example:
+python
+Copy code
+from datetime import datetime, timedelta
+
+current_datetime = datetime.now()
+future_datetime = current_datetime + timedelta(days=7)
+print(future_datetime)
+strftime(format) (string format time function):
+
+Use: Converts a datetime object to a string with a specified format.
+Example:
+python
+Copy code
+from datetime import datetime
+
+current_datetime = datetime.now()
+formatted_date = current_datetime.strftime("%Y-%m-%d %H:%M:%S")
+print(formatted_date)
+strptime(date_string, format) (string parse time function):
+
+Use: Parses a string representing a date and time into a datetime object.
+Example:
+python
+Copy code
+from datetime import datetime
+
+date_string = "2022-03-10 14:30:00"
+parsed_datetime = datetime.strptime(date_string, "%Y-%m-%d %H:%M:%S")
+print(parsed_datetime)
